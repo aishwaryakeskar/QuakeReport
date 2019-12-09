@@ -17,10 +17,18 @@
         android:layout_height="wrap_content"/>
 
     <TextView
-        android:id="@+id/location"
+        android:id="@+id/locationOffset"
         android:layout_weight="1"
-        tools:text="Tokyo"
+        tools:text="74km NW of"
         android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/primaryLocation"
+        android:layout_weight="1"
+        tools:text="Rumoi, Japan"
+        android:layout_width="0dp"
+        android:textColor="@color/colorAccent"
         android:layout_height="wrap_content" />
 
     <TextView
@@ -28,7 +36,6 @@
         android:layout_weight="1"
         tools:text="04-07-2016"
         android:layout_width="0dp"
-        android:textColor="@color/colorAccent"
         android:layout_height="wrap_content" />
 
     <TextView
@@ -36,5 +43,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:textColor="@color/colorAccent"
         tools:text="6:20 PM" />
 </LinearLayout>
