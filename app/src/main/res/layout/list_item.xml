@@ -1,42 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
     android:gravity="center_vertical"
-    android:orientation="horizontal"
     android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
     android:padding="16dp">
 
     <TextView
         android:id="@+id/magnitude"
-        android:layout_weight="1"
-        tools:text="6.5"
-        android:layout_width="0dp"
-        android:textColor="@color/colorAccent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/magnitude_circle"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:text="6.5"/>
 
     <TextView
         android:id="@+id/locationOffset"
-        android:layout_weight="1"
-        tools:text="74km NW of"
+        android:layout_marginLeft="16dp"
         android:layout_width="0dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="74km NW of" />
 
     <TextView
         android:id="@+id/primaryLocation"
-        android:layout_weight="1"
-        tools:text="Rumoi, Japan"
         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:textColor="@color/colorAccent"
-        android:layout_height="wrap_content" />
+        tools:text="Rumoi, Japan" />
 
     <TextView
         android:id="@+id/date"
-        android:layout_weight="1"
-        tools:text="04-07-2016"
         android:layout_width="0dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="04-07-2016" />
 
     <TextView
         android:id="@+id/time"
