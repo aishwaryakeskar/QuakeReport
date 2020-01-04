@@ -18,8 +18,6 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.android.quakereport.EarthquakeActivity.LOG_TAG;
-
 public final class QueryUtils {
 
     private static final String LOG_TAG = QueryUtils.class.getSimpleName();
@@ -29,11 +27,11 @@ public final class QueryUtils {
 
     public static List<Earthquake> fetchEarthquakeData(String requestUrl) {
 
-        try {
+        /*try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }*/
 
         URL url = createUrl(requestUrl);
 
@@ -59,7 +57,7 @@ public final class QueryUtils {
 
         try {
 
-            JSONObject baseJsonResponse  = new JSONObject(earthquakeJSON);
+            JSONObject baseJsonResponse = new JSONObject(earthquakeJSON);
             JSONArray earthquakeArray = baseJsonResponse.getJSONArray("features");
 
             for (int i = 0; i < earthquakeArray.length(); i++) {
