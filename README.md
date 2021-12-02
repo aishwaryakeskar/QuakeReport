@@ -1,1 +1,1 @@
-An app to check earthquake reports.
+An Android app to check earthquakes reported at a given location along with its magnitude.
